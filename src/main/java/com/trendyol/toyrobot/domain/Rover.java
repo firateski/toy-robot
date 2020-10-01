@@ -15,7 +15,7 @@ public class Rover {
     }
 
     public Rover(int x, int y, Compass compass) {
-        location = new Location(x, y);
+        this.location = new Location(x, y);
         this.compass = compass;
     }
 
@@ -24,11 +24,11 @@ public class Rover {
     }
 
     public void turnLeft() {
-        this.compass = compass.turnLeft();
+        compass = compass.turnLeft();
     }
 
     public void turnRight() {
-        this.compass = compass.turnRight();
+        compass = compass.turnRight();
     }
 
     public Compass getCompass() {
