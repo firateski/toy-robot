@@ -2,8 +2,8 @@ package com.trendyol.toyrobot.domain.compass;
 
 public class North implements Compass {
     @Override
-    public Location move(Location currentPosition) {
-        return currentPosition.moveTop();
+    public Location move(Location currentLocation) {
+        return currentLocation.moveTop();
     }
 
     @Override
