@@ -13,4 +13,28 @@ public class Location {
         this.X = x;
         this.Y = y;
     }
+
+    public Location moveLeft(){
+        this.X -= 1;
+
+        return this;
+    }
+
+    public Location moveRight(){
+        this.X += 1;
+
+        return this;
+    }
+
+    public Location moveTop(){
+        this.Y += 1;
+
+        return this;
+    }
+
+    public Location moveBottom(){
+        this.Y -= 1;
+
+        return this;
+    }
 }

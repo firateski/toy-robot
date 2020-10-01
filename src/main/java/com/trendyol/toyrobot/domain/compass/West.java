@@ -3,7 +3,7 @@ package com.trendyol.toyrobot.domain.compass;
 public class West implements Compass {
     @Override
     public Location move(Location currentPosition) {
-        return new Location(currentPosition.getX() - 1, currentPosition.getY());
+        return currentPosition.moveLeft();
     }
 
     @Override

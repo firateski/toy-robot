@@ -4,7 +4,7 @@ public class East implements Compass {
 
     @Override
     public Location move(Location currentPosition) {
-        return new Location(currentPosition.getX() + 1, currentPosition.getY());
+        return currentPosition.moveRight();
     }
 
     @Override
